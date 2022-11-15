@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+<body class="container pt-5">
+
+    <main class="align-items-center align-content-center row">
+
+        <div class="col-12 align-content-center text-center">
+
+            <div class="">
+                <input class="number_input" type="text" inputmode="numeric" name="" id="num1">
+                <select disabled name="operation" id="operation_select">
+                    <option value="add">+</option>
+                    <option value="sub">-</option>
+                    <option value="mul">*</option>
+                    <option value="div">/</option>
+                </select>
+                
+                <input class="number_input" type="text" inputmode="numeric" name="" id="num2">
+                
+                <div class="equals d-inline-block">
+                    =
+                </div>
+
+                <input disabled class="result" type="text" inputmode="numeric" name="" id="result">
+
+            <div class="buttons pt-3 text-center">
+
+                <button onclick="setOperation('add')" class="fw-semibold btn btn-secondary mx-1 add text-black border-0 btn-op"> + </button>
+                <button onclick="setOperation('sub')" class="fw-semibold btn btn-secondary mx-1 sub text-black border-0 btn-op"> - </button>
+                <button onclick="setOperation('mul')" class="fw-semibold btn btn-secondary mx-1 mul text-black border-0 btn-op"> x </button>
+                <button onclick="setOperation('div')" class="fw-semibold btn btn-secondary mx-1 div text-black border-0 btn-op"> : </button>
+                
+                <!-- <input type="submit" id="calculate" onclick="getResult()" class="fw-bold btn btn-success mx-1" value="="> -->
+                <input type="submit" id="clear" onclick="Clear()" class="fw-bolder btn btn-danger mx-1 btn-op" value="C">
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/bootstrap.bundle.js"></script>
+</html>
